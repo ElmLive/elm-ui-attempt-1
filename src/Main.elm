@@ -1,5 +1,8 @@
 module Main exposing (main)
 
+-- Trying to recreate
+-- https://dribbble.com/shots/5528842-Rainbow-Messenger-App
+
 import Element exposing (..)
 import Element.Background as Background
 import Element.Border as Border
