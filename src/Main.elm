@@ -9,6 +9,7 @@ import Element.Border as Border
 import Element.Font as Font
 import Element.Input as Input
 import Html exposing (Html)
+import Html.Attributes exposing (style)
 
 
 colors =
@@ -186,10 +187,15 @@ featuredCard fonts contact =
             [ Font.size fonts.tinyHighlight
             , centerX
             , width fill
+            , height (px 32)
             , spacing 2
             , Font.center
             , padding 5
             , Font.color colors.accent1
+            , htmlAttribute (style "display" "-webkit-box")
+            , htmlAttribute (style "-webkit-box-orient" "vertical")
+            , htmlAttribute (style "-webkit-line-clamp" "2")
+            , htmlAttribute (style "overflow" "hidden")
             ]
             [ text contact.slogan ]
         ]
